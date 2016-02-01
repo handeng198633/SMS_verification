@@ -157,7 +157,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   sqlite3
   turbolinks
-  twilio-ruby
+  twilio-ruby (= 4.10.0)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
