@@ -8,7 +8,7 @@ class PhoneNumber < ActiveRecord::Base
 	def send_pin
 		twilio_client.messages.create(
     		to: phone_number,
-    		from: ENV['TWILIO_PHONE_NUMBER'],
+    		from: '+12014398966',
     		body: "Your PIN is #{pin}"
   		)
 	end
@@ -18,7 +18,7 @@ class PhoneNumber < ActiveRecord::Base
 	end
 
 	def twilio_client
-  		Twilio::REST::Client.new(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN'])
+  		Twilio::REST::Client.new("ACcb1b88114e0937d43e5e9e5ea65da8d1", "a56b38f4c7e005057fb24418818efade")
 	end
 end
 
